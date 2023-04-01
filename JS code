@@ -1,0 +1,70 @@
+console.log("Hello, world!");
+let x = 10;
+let y = 5;
+console.log(x + y);
+console.log(x - y);
+console.log(x * y);
+console.log(x / y);
+console.log(x % y);
+let name = prompt("What is your name?");
+console.log("Hello, " + name);
+let age = prompt("How old are you?");
+console.log("You are " + age + " years old.");
+let isOldEnough = age >= 18;
+console.log("Are you old enough to vote? " + isOldEnough);
+let isEven = x % 2 === 0;
+console.log("Is " + x + " even? " + isEven);
+let isPositive = y > 0;
+console.log("Is " + y + " positive? " + isPositive);
+let array = [1, 2, 3, 4, 5];
+console.log(array);
+console.log(array[0]);
+console.log(array[4]);
+console.log(array.length);
+array.push(6);
+console.log(array);
+array.pop();
+console.log(array);
+array.shift();
+console.log(array);
+array.unshift(0);
+console.log(array);
+let newArray = array.slice(1, 3);
+console.log(newArray);
+let object = { name: "John", age: 30 };
+console.log(object);
+console.log(object.name);
+console.log(object.age);
+object.email = "john@example.com";
+console.log(object);
+delete object.age;
+console.log(object);
+let sum = function(a, b) { return a + b };
+console.log(sum(2, 3));
+let multiply = function(a, b) { return a * b };
+console.log(multiply(2, 3));
+let greet = function(name) { console.log("Hello, " + name) };
+greet("John");
+let calculate = function(operation, a, b) {
+if (operation === "+") { return a + b }
+else if (operation === "-") { return a - b }
+else if (operation === "*") { return a * b }
+else if (operation === "/") { return a / b }
+};
+console.log(calculate("+", 2, 3));
+console.log(calculate("-", 2, 3));
+console.log(calculate("*", 2, 3));
+console.log(calculate("/", 2, 3));
+let sayHello = () => console.log("Hello!");
+sayHello();
+let add = (a, b) => a + b;
+console.log(add(2, 3));
+let multiplyByTwo = a => a * 2;
+console.log(multiplyByTwo(3));
+let names = ["John", "Jane", "Jack"];
+names.forEach(name => console.log("Hello, " + name));
+let filteredNames = names.filter(name => name.startsWith("J"));
+console.log(filteredNames);
+let mappedNames = names.map(name => name.toUpperCase());
+console.log(mappedNames);
+let reducedNames
